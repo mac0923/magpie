@@ -1,0 +1,34 @@
+{
+  "summary": "Agents 列表里新增了 omp 的命名配置档行：~/.omp/profiles 下每个合法配置档都是独立 Agent（Windows 上是「omp · <名称>」，WSL 里是「omp · <名称> · WSL <发行版>」），各自拥有模型、task、smol/slow、thinking 等设置与接入状态、断开；同时 app.js 对 API 路径段做了 URL 编码，避免 omp#work 在 # 处被截断而写错行。",
+  "scenes": [
+    {
+      "title": "Agent 列表：omp 行所在的位置",
+      "shots": [
+        {
+          "file": "01-agents-list.png",
+          "caption": "Agent 标签页的列表，改动新增的「omp · <名称>」行会出现在这里",
+          "width": 2496
+        },
+        {
+          "file": "02-agents-unfolded.png",
+          "caption": "展开后的 Agent 列表，看 omp 行旁边有没有配置档行",
+          "width": 2560
+        },
+        {
+          "file": "03-agents-install.png",
+          "caption": "未安装的 Agent 列表，omp 不在已检测到的行里时在这里",
+          "width": 2496
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒里没有 ~/.omp/profiles 下的命名配置档（seed 数据只覆盖供应商、路由组、资源库、会话和两个 Codex 账号），运行环境也不是 Windows、没有 WSL 发行版，所以新增的「omp · <名称>」「omp · <名称> · WSL <发行版>」行、它们各自的设置/接入/断开，以及 omp#work 这类 id 的 URL 编码修复都无法在画面上出现；只能看到这些行会出现的 Agent 列表本身。",
+  "interactive": true,
+  "pages": 1
+}

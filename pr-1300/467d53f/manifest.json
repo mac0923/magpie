@@ -1,0 +1,31 @@
+{
+  "summary": "只改了一处文案：账号「用量上限」胶囊（button.acap）的悬停提示改为「按最近一次读数…」，说明读数约每分钟刷新、窗口可能先超过上限；中文（简/繁）、日文、德文译文同步更新。",
+  "scenes": [
+    {
+      "title": "账号用量上限胶囊的提示措辞",
+      "shots": [
+        {
+          "file": "01-codex-account-cap-pill.png",
+          "caption": "Codex 账号行里的用量上限胶囊",
+          "width": 2560
+        },
+        {
+          "file": "02-cap-pill-title.png",
+          "caption": "悬停「用量上限」胶囊后的提示",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [
+    "账号用量上限胶囊的提示措辞 · scroll : nothing visible matches button.acap (0 in the page)"
+  ],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "改动只落在胶囊的原生 title 悬停提示里，没有新的页面、按钮或设置项；这种系统原生气泡在截图/录屏中通常不会渲染出来，只能看到胶囊本身。另外这条新文案只在「已设上限」的胶囊上出现，沙盒里的账号若都没设上限，胶囊显示的是「无上限」那句提示。",
+  "interactive": true,
+  "pages": 1
+}
